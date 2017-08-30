@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost/own_website/# -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no">
+    <title>Weather Website</title>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCnf3cJb3Dnd4zdA_t2DQ6hc9VbXQEF5ZQ&libraries=places" type="text/javascript"></script>
+    <script src = "./src/js/weather.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/weather.css">
+  </head>
+  <body>
+    <div class="page-control">
+      <div  class="weather-img">
+        <img id="bkImg" class="background-img" src="./src/img/default_bk_img.jpg">
+      </div>
+      <div class="pos-center" id = "search-div">
+        <input id = "searchTxt" class = "search-bar" type="search" name="Search" placeholder="Search.." onkeypress="handle(event)"  autocomplete="on">
+      </div>
+      <div class="temp-disp" id="disp">
+        <div id="loc" class="pos temp-dec" style="font-size: 45px"></div>
+        <div class=" pos temp-dec" id="temp" ></div>
+        <div id="humid" class="pos temp-dec"></div>
+        <div id="wind" class="pos temp-dec"></div>  
+        <div id="date" class="pos temp-dec" style="font-size: medium;"></div>  
+      </div>
+    </div>
+  </body>
+</html>
