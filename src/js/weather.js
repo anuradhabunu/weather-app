@@ -1,7 +1,7 @@
 /* Function to handle on eneter to the search bar*/
 function handle(e) {
         var city = document.getElementById("searchTxt").value;
-        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=5372dab24a061820454dedd6b8306cb0";
+        var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=5372dab24a061820454dedd6b8306cb0";
         var weatherID;
         var searchDiv = document.getElementById("search-div");
         if (e.keyCode == 13) {
@@ -69,7 +69,7 @@ function setDisplayProperties(imgName, textColor, temperature, weatherIcon, icon
   var weatherTemperature = document.getElementById("temp");
   imgDisplay.src = './src/img/' + imgName + '.jpg';
   dispcolor.style.color = textColor;
-  weatherTemperature.innerHTML =  temperature + '<img src = \'http://openweathermap.org/img/w/' + weatherIcon + '.png\' alt = \'' + iconAltText + '\' style = \'position : relative ; top:14px;\'>    ' + weatherDesc ;
+  weatherTemperature.innerHTML =  temperature + '<img src = \'https://openweathermap.org/img/w/' + weatherIcon + '.png\' alt = \'' + iconAltText + '\' style = \'position : relative ; top:14px;\'>    ' + weatherDesc ;
 }
 
 function tempDetails(response) {
